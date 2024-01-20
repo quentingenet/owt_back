@@ -1,0 +1,12 @@
+.idea
+.env
+.vscode
+<<<<<<< HEAD
+venv
+__pycache__/
+dist/
+build/
+*.log
+=======
+venv
+>>>>>>> ce2b312 (Feature 'register' in progress)
