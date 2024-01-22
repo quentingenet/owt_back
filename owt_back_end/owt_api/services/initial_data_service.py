@@ -4,8 +4,9 @@ from owt_api.models import InitialData
 from owt_api.serializers import InitialDataSerializer
 
 
-def set_initial_data_first_connexion(data):
+def set_initial_data_first_connexion(user_id, data):
     serializer = InitialDataSerializer(data=data)
+
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
